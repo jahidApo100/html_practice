@@ -3,97 +3,139 @@
 <html>
 
 <head>
-     <title>jahid</title>
-     <link rel="stylesheet" href="style.css">
-     <style>
-      h1{
-        text-align: center;
-      }
-        body{background-color: blanchedalmond;}
-        p {color: rgb(0, 0, 0);}
-      table{
-        font-family: 'Courier New', Courier, monospace;
-        border-collapse: collapse;
-        width: 100%;
-      }
-       th{
-        border: 1px solid #060606;
-        border-radius: 20px;
-        text-align: center;
-        padding: 10px;
-       }
-      td{
-        border: 1px solid #060606;
-        border-radius: 20px;
-        text-align:left;
-        padding: 10px;
-      }
-        tr:nth-child(even){
-          background-color: #dddddd;
-        }
-        tr:nth-child(odd){
-          background-color: #dcfc2b;
-        }
+  <title>jahid</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    h1 {
+      text-align: center;
+    }
 
-        address {
-          color: rgb(249, 11, 11);
-          text-align: right;
-        }
-     </style>
+    body {
+      background-color: blanchedalmond;
+    }
+
+    p {
+      color: rgb(0, 0, 0);
+    }
+
+    table {
+      font-family: 'Courier New', Courier, monospace;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th {
+      border: 1px solid #060606;
+      border-radius: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    td {
+      border: 1px solid #060606;
+      border-radius: 20px;
+      text-align: left;
+      padding: 10px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #dcfc2b;
+    }
+
+    address {
+      color: rgb(249, 11, 11);
+      text-align: right;
+    }
+  </style>
 </head>
-  <body>
-  
-    <h1 style="background-color: aquamarine;"><b><mark>This is my page</mark></b></h1>
 
-    <img src="images.jpeg" style="width:400px;height:250px;"><br>
-    <a href="images1.jpeg" target="_blank">Images</a> 
+<script>
+  function light(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "/Users/towfiqulislam/AndroidStudio/Html/towfiq.jpg"
+    } else {
+      pic = "/Users/towfiqulislam/AndroidStudio/Html/towfiq1.jpg"
+    }
+    document.getElementById('myImage').src = pic;
+  }
+</script>
 
-    <p><a href="https://www.w3schools.com/" target="_blank">visit my page</a></p>
+<body>
 
-    <p><a href="mailto:jhapo019315@gmail.com">Send email</a></p>
-    <button>Send message</button>
-           
-    <p style="background-image: url(istockphoto-1322277517-612x612.jpg);">The power paragraph is taught by many English teachers because it focuses on analysis and completely addresses an issue. The focus on analysis encourages students to organize sentences in order of importance. Power paragraphs are an element of power writing, which is a numerical approach to writing structure that teaches students how to organize their thoughts before they begin writing, guiding the student on how to say what they are trying to communicate, and when to say it.</p>   
+  <h1 style="background-color: aquamarine;"><b><mark>This is my page</mark></b></h1>
 
-    <table>
-         <tr>
-            <th>Name</th>
-            <th>Village</th>
-            <th>Upojila</th>
-         </tr>
-         <tr>
-            <td>jahid</td>
-            <td>taltola</td>
-            <td>kasba</td>
-         </tr>
-         <tr>
-          <td>hassan</td>
-          <td>kasba</td>
-          <td>akhaura</td>
-       </tr>
-       <tr>
-        <td>towfic</td>
-        <td>shikarpor</td>
-        <td>kasba</td>
-     </tr>
-    </table>
 
-        <h2>Absolute Urls</h2>
-        <p><a href="https://www.w3.org/">W3C</a></p>
-        <p><a href="https://www.google.com/">GOOGLE</a></p>
+  <img id="myImage" src="/Users/towfiqulislam/AndroidStudio/Html/towfiq.jpg" width="100" height="180">
 
-        <h2>Relative Urls</h2>
-        <p><a href="html_images.asp">Html image</a></p>
-        <p><a href="/css/default.asp">Css tutorial</a></p>
+  <p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+  </p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FwmuhNTrJO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-<address><pre>
+
+
+  <img src="images.jpeg" style="width:400px;height:250px;"><br>
+  <a href="images1.jpeg" target="_blank">Images</a>
+
+  <p><a href="https://www.w3schools.com/" target="_blank">visit my page</a></p>
+
+  <p><a href="mailto:jhapo019315@gmail.com">Send email</a></p>
+  <button>Send message</button>
+
+  <p style="background-image: url(istockphoto-1322277517-612x612.jpg);">The power paragraph is taught by many English
+    teachers because it focuses on analysis and completely addresses an issue. The focus on analysis encourages students
+    to organize sentences in order of importance. Power paragraphs are an element of power writing, which is a numerical
+    approach to writing structure that teaches students how to organize their thoughts before they begin writing,
+    guiding the student on how to say what they are trying to communicate, and when to say it.</p>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Village</th>
+      <th>Upojila</th>
+    </tr>
+    <tr>
+      <td>jahid</td>
+      <td>taltola</td>
+      <td>kasba</td>
+    </tr>
+    <tr>
+      <td>hassan</td>
+      <td>kasba</td>
+      <td>akhaura</td>
+    </tr>
+    <tr>
+      <td>towfic</td>
+      <td>shikarpor</td>
+      <td>kasba</td>
+    </tr>
+  </table>
+
+  <h2>Absolute Urls</h2>
+  <p><a href="https://www.w3.org/">W3C</a></p>
+  <p><a href="https://www.google.com/">GOOGLE</a></p>
+
+  <h2>Relative Urls</h2>
+  <p><a href="html_images.asp">Html image</a></p>
+  <p><a href="/css/default.asp">Css tutorial</a></p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FwmuhNTrJO4" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+
+  <address>
+    <pre>
 creat by jahid. 
 Visitor: towfic.
 kasba,brahmanbaria.</pre>
-</address>
-  
-  </body>
+  </address>
+
+</body>
 
 </html>
